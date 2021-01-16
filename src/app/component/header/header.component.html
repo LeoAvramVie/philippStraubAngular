@@ -1,8 +1,29 @@
-<mat-toolbar>
-  <mat-icon
-    fxFlex
-    fxLayoutAlign="flex-end center"
-  >
-    menu
-  </mat-icon>
-</mat-toolbar>
+<div fxFlex fxLayoutAlign="flex-end center" class="hamburger">
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+</div>
+<mat-menu  #menu="matMenu">
+  <button mat-menu-item>
+    <span>Home</span>
+  </button>
+  <button mat-menu-item>
+    <span>Biography</span>
+  </button>
+  <button mat-menu-item>
+    <span>Releases</span>
+  </button>
+  <button mat-menu-item>
+    <span>DJ-Sets</span>
+  </button>
+  <button mat-menu-item>
+    <span>Gallery</span>
+  </button>
+  <button mat-menu-item>
+    <span>Presskit</span>
+  </button>
+  <button mat-menu-item>
+
+    <span>Contact</span>
+  </button>
+</mat-menu>
